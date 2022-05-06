@@ -12,7 +12,7 @@ class Solution {
 public:
     bool isPalindrome(ListNode* head)
     {
-        deque<int> dq;
+        std::deque<int> dq;
         ListNode* ptr = head;
         while(ptr)
         {
