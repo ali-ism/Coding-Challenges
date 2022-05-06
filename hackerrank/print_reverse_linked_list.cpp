@@ -1,3 +1,5 @@
+using namespace std;
+
 /*
  * Complete the 'reversePrint' function below.
  *
@@ -13,8 +15,6 @@
  * };
  *
  */
-
-using namespace std;
 
 void reversePrint(SinglyLinkedListNode* llist)
 {
