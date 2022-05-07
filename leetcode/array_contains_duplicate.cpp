@@ -1,6 +1,6 @@
 class Solution {
 public:
-    bool containsDuplicate(vector<int>& nums)
+    bool containsDuplicate(std::vector<int>& nums)
     {
         std::unordered_map<int,int> m;
         for(const int num:nums)
