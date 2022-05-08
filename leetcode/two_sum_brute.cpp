@@ -11,11 +11,10 @@ public:
                 {
                     ans[0] = i;
                     ans[1] = j;
-                    goto done;
+                    return ans;
                 }
             }
         }
-        done:
-            return ans;
+        return ans;
     }
 };
