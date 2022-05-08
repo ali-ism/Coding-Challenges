@@ -5,16 +5,13 @@ public:
         vector<int> ans(2);
         for(int i=0; i<nums.size(); i++)
         {
-            if(nums[i] <= target)
+            for(int j=i+1; j<nums.size(); j++)
             {
-                for(int j=i+1; j<nums.size(); j++)
+                if(nums[i]+nums[j]==target)
                 {
-                    if(nums[i]+nums[j]==target)
-                    {
-                        ans[0] = i;
-                        ans[1] = j;
-                        goto done;
-                    }
+                    ans[0] = i;
+                    ans[1] = j;
+                    goto done;
                 }
             }
         }
